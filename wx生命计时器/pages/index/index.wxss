@@ -1,0 +1,26 @@
+/**index.wxss**/
+.container{
+  width:100%;
+  height:100%;
+}
+.peopleTime{
+  /* width:100%; */
+  font-size: 15px;
+  color:#666;
+}
+.pickers{
+  display:flex;
+}
+.time{
+  height:50px;
+  line-height: 50px;
+  font-size: 20px;
+  color:#999;
+}
+.btn1{
+  width:95px;
+  height:30px;
+  font-size: 13px;
+  text-align: center;
+  line-height: 30px;
+}

@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+  <text class='peopleTime'>中国现阶段人均寿命900个月</text>
+  <view class="section">
+    <!-- <view class="section__title"></view> -->
+    <picker mode="date" value="{{date}}" start="1950-01-01" end="2020-02-11" bindchange="bindDateChange">
+      <view class="picker">
+      <text class='time'>{{date}}   至今{{bindchange/900}}个月</text>
+       <button class='btn1'>换一个日期</button> 
+      </view>
+    </picker>
+  </view>
+  <view class='wrap'>
+    <view class='timeImg'>
+     
+     
+    </view>
+  </view>
+</view>
