@@ -1,19 +1,45 @@
-<!--index.wxml-->
-<view class="container">
-  <text class='peopleTime'>中国现阶段人均寿命900个月</text>
-  <view class="section">
-    <!-- <view class="section__title"></view> -->
-    <picker mode="date" value="{{date}}" start="1950-01-01" end="2020-02-11" bindchange="bindDateChange">
-      <view class="picker">
-      <text class='time'>{{date}}   至今{{bindchange/900}}个月</text>
-       <button class='btn1'>换一个日期</button> 
-      </view>
-    </picker>
+<view class="wrap">
+  <view class="context">
+    <view class="header">
+      中国现阶段人均寿命900个月
+    </view>
+    <view class="time">
+      {{year}} 年 {{mouth}} 月至今 {{mytimes}}个月
+    </view>
+    <view class="btns ">
+      <picker mode="date" class="but"  fields="month" bindchange="chagtime">
+        换一个日期
+      </picker>
+      <text class="but" bindtap="clear" > 清除记录 </text>
+    </view>
+    <view class="wrap ">
+    <view class='box'>
+    <view class='power'></view>
+    </view>
+    </view>
+
+
   </view>
-  <view class='wrap'>
-    <view class='timeImg'>
-     
-     
+  <view class="footer ">
+    <view class="icon ">
+      <text class="iconfont icon-shouye1 "></text>
+      <text class="txt ">首页</text>
+    </view>
+    <view class="icon ">
+      <text class="iconfont icon-shijian "></text>
+      <text class="txt ">年月日 </text>
+    </view>
+    <view class="icon ">
+      <text class="iconfont icon-liebiao "></text>
+      <text class="txt "> 日子 </text>
+    </view>
+    <view class="icon ">
+      <text class="iconfont icon-zanting "></text>
+      <text class="txt ">静思</text>
+    </view>
+    <view class="icon ">
+      <text class="iconfont icon-xiaolian "></text>
+      <text class="txt ">关于</text>
     </view>
   </view>
 </view>

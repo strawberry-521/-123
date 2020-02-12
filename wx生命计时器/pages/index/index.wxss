@@ -1,26 +1,85 @@
-/**index.wxss**/
-.container{
-  width:100%;
-  height:100%;
+page {
+  width: 100%;
+  height: 100%;
 }
-.peopleTime{
-  /* width:100%; */
-  font-size: 15px;
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.context {
+  flex: 1;
+}
+
+.context>.header {
+  line-height: 100rpx;
+  text-align: center;
   color:#666;
 }
-.pickers{
-  display:flex;
-}
-.time{
-  height:50px;
-  line-height: 50px;
-  font-size: 20px;
+
+.context>.time {
+  font-size: 50rpx;
   color:#999;
-}
-.btn1{
-  width:95px;
-  height:30px;
-  font-size: 13px;
   text-align: center;
+}
+
+.context>.btns {
+  width: 100%;
+  height: 100rpx;
+  padding: 0 15%;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+  margin: 30rpx 0;
+}
+
+.context>.btns>.but {
+  height:30px;
+  border: 1rpx solid #ccc;
+  padding: 0 20rpx;
+  border-radius: 10rpx;
   line-height: 30px;
+  font-size: 15px;
+}
+
+.footer {
+  width: 100%;
+  height: 110rpx;
+  background: #e3e3e3;
+  border-top: 1rpx solid;
+  display: flex;
+}
+
+.footer>.icon {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer>.icon>.iconfont {
+  font-size: 40rpx;
+  color: #666;
+}
+
+.footer>.icon>.txt {
+  font-size: 30rpx;
+  margin-top: 3rpx;
+}
+.box{
+  margin:0 auto;
+width:300rpx;
+height:500rpx;
+border:1rpx solid #ccc;
+
+}
+.power{
+ margin-top:250rpx;
+  width:100%;
+  height:50%;
+background-color: #0f0;
 }
