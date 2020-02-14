@@ -1,0 +1,32 @@
+.wrap {
+  height: 100%;
+}
+
+map {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding-bottom: 100rpx;
+}
+
+Button {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 100rpx;
+}
+
+.box {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  bottom: 100rpx;
+}
+
+.box > Text {
+  font-size: 60rpx;
+}
